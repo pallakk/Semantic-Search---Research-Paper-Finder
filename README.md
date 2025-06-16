@@ -1,34 +1,60 @@
 # Semantic Research Paper Finder
 
-This project implements a semantic search engine for academic research papers using SBERT (Sentence-BERT). Given a user's natural language query, it retrieves the most semantically relevant research paper abstracts from a curated arXiv dataset.
+This project implements a semantic search engine for academic research papers using Sentence-BERT. Given a user's natural language query, it retrieves the most semantically relevant research paper abstracts from a curated arXiv dataset.
 
-## 🔍 Features
-- Vector-based semantic search using sentence-transformers (`all-MiniLM-L6-v2`)
-- Cosine similarity ranking over 5,000 preprocessed arXiv papers
-- Fast query processing with numpy and scikit-learn
-- Offline-ready: No external APIs or internet inference required
-- Saves results to a text file for easy analysis
+## Features
 
-## 📁 Dataset
+- Vector-based semantic search using `sentence-transformers` (all-MiniLM-L6-v2)
+- Cosine similarity ranking over 5,000 preprocessed arXiv abstracts
+- Fast in-memory querying using NumPy and scikit-learn
+- Saves results to `search_results.txt` for easy analysis
+- Optional browser-based UI built with Flask and HTML/CSS
+- Works offline — no API keys or external services required
+
+## Dataset
+
 - Source: [Cornell University arXiv Metadata Dataset](https://www.kaggle.com/datasets/Cornell-University/arxiv)
-- Fields used: Title, Abstract, Categories, Authors
-- Preprocessed and embedded using SBERT into `abstract_embeddings.npy`
+- Fields used: `title`, `abstract`, `categories`, `authors`
+- Processed to:
+  - `cleaned_arxiv_subset.csv` — sampled and cleaned subset
+  - `abstract_embeddings.npy` — precomputed SBERT embeddings
+  - `paper_metadata.csv` — title and abstract metadata
 
-## 💡 Use Cases
-- Quickly find semantically related papers for literature reviews
-- Discover connections between fields with free-text queries
-- Lay foundation for building vector search APIs or LLM-enhanced tools
+## Use Cases
 
-## 🚀 Technologies
-- Python, pandas, numpy
-- [sentence-transformers](https://www.sbert.net/)
-- sklearn cosine similarity
+- Discover relevant papers for literature reviews and research
+- Explore cross-domain relationships through free-text queries
+- Prototype vector search for ML or LLM-powered systems
+- Integrate into larger academic research tools
 
-## ✍️ Example
-Query: "graph neural networks for social networks"
-Output → Top 5 papers with similarity scores and abstract previews
+## Technologies
 
-## 🔧 To Run
-bash:
-pip install -r requirements.txt\
+- Python, pandas, NumPy
+- sentence-transformers
+- scikit-learn
+- Flask (for web UI)
+- HTML, CSS (basic frontend)
+
+## Example
+
+**Query:**  
+`graph neural networks for social networks`
+
+**Output:**  
+Top 5 paper titles with semantic similarity scores and short abstract previews.
+
+## Usage
+```bash
+pip install -r requirements.txt
+python embed_abstracts.py
 python semantic_search.py
+```
+OR
+```bash
+python app.py
+```
+
+Owner
+Pallak Dhabalia
+GitHub: github.com/pallakk
+LinkedIn: linkedin.com/in/pallak-dhabalia
