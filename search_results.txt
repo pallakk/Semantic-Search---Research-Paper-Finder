@@ -1,0 +1,38 @@
+#1. Spectral plots and the representation and interpretation of biological
+  data
+Similarity: 0.449
+Abstract:   It is basic question in biology and other fields to identify the char-
+acteristic properties that on one hand are shared by structures from a
+particular realm, like gene regulation, protein-protein interaction or neu- ral
+networks or foodwebs, and that on the other hand distinguish them from other...
+
+#2. Statistical analysis of weighted networks
+Similarity: 0.423
+Abstract:   The purpose of this paper is to assess the statistical characterization of
+weighted networks in terms of the generalization of the relevant parameters,
+namely average path length, degree distribution and clustering coefficient.
+Although the degree distribution and the average path length admit
+str...
+
+#3. Mixed membership stochastic blockmodels
+Similarity: 0.413
+Abstract:   Observations consisting of measurements on relationships for pairs of objects
+arise in many settings, such as protein interaction and gene regulatory
+networks, collections of author-recipient email, and social networks. Analyzing
+such data with probabilisic models can be delicate because the simpl...
+
+#4. Quantifying social group evolution
+Similarity: 0.411
+Abstract:   The rich set of interactions between individuals in the society results in
+complex community structure, capturing highly connected circles of friends,
+families, or professional cliques in a social network. Thanks to frequent
+changes in the activity and communication patterns of individuals, the
+as...
+
+#5. Growing Directed Networks: Estimation and Hypothesis Testing
+Similarity: 0.383
+Abstract:   Based only on the information gathered in a snapshot of a directed network,
+we present a formal way of checking if the proposed model is correct for the
+empirical growing network under study. In particular, we show how to estimate
+the attractiveness, and present an application of the model present...
+
