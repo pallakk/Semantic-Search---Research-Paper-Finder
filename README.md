@@ -25,3 +25,10 @@ This project implements a semantic search engine for academic research papers us
 - sklearn cosine similarity
 
 ## ✍️ Example
+Query: "graph neural networks for social networks"
+Output → Top 5 papers with similarity scores and abstract previews
+
+## 🔧 To Run
+bash:
+pip install -r requirements.txt
+python semantic_search.py
