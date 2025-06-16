@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Research Paper Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Semantic Research Paper Finder</h1>
+        <form method="POST">
+            <input type="text" name="query" placeholder="e.g. deep learning in cardiology" required>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if results %}
+            <h2>Top Results</h2>
+            <ul>
+                {% for title, abstract, score in results %}
+                    <li>
+                        <h3>{{ loop.index }}. {{ title }}</h3>
+                        <p><strong>Score:</strong> {{ "%.3f"|format(score) }}</p>
+                        <p>{{ abstract[:500] }}...</p>
+                        <hr>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
