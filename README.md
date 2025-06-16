@@ -30,5 +30,5 @@ Output → Top 5 papers with similarity scores and abstract previews
 
 ## 🔧 To Run
 bash:
-pip install -r requirements.txt
+pip install -r requirements.txt\
 python semantic_search.py
